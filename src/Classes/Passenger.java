@@ -7,19 +7,19 @@ package Classes;
 public class Passenger {
     private Name name;
     private Address address;
-    private String telephoneNumber;
+    private String telNum;
 
     public Passenger() {
         
         name = new Name();
         address = new Address();
-        this.telephoneNumber = "";
+        this.telNum = "";
     }
 
-    public Passenger(Name name, Address address, String telephoneNumber) {
+    public Passenger(Name name, Address address, String telNum) {
         this.name = name;
         this.address = address;
-        this.telephoneNumber = telephoneNumber;
+        this.telNum = telNum;
     }
 
     public void setName(Name name) {
@@ -30,8 +30,8 @@ public class Passenger {
         this.address = address;
     }
 
-    public void setTelephoneNumber(String telephoneNumber) {
-        this.telephoneNumber = telephoneNumber;
+    public void settelNum(String telNum) {
+        this.telNum = telNum;
     }
     
     public Name getName() {
@@ -42,13 +42,13 @@ public class Passenger {
         return address;
     }
     
-    public String getTelephoneNumber() {
-        return telephoneNumber;
+    public String gettelNum() {
+        return telNum;
     }
 
     @Override
     public String toString() {
-        return name + "@" + address + "@" + telephoneNumber;
+        return name + "@" + address + "@" + telNum;
     }
      
       
